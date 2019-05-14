@@ -1,0 +1,12 @@
+*** Settings ***
+Library           Collections
+Library           OperatingSystem
+Library           ../business/NewHtmlParseImp.py
+
+*** Variables ***
+${version}        di1
+
+*** Keywords ***
+html_public_model
+    [Arguments]    @{data_resouce}
+    Html Model Pub    ${data_resouce}    ${version}

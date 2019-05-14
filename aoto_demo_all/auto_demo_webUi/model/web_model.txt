@@ -1,0 +1,10 @@
+*** Settings ***
+Library           ../business/WebImp.py
+
+*** Variables ***
+${version}        di1
+
+*** Keywords ***
+web_public_model
+    [Arguments]    @{data_resouce}
+    Web Flow Model    ${data_resouce}    ride    ${version}

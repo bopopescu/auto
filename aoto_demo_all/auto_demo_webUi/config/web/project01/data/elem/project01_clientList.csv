@@ -1,0 +1,2 @@
+clientListLink,clientName,queryButton,clientNo,idType,idNo,queryDetail,infoDetail
+//*[@id="main"]/div[2]/div[1]/ul/li[3]/a,//*[@id="clientName"],//*[@id="queryButton"]/span/span,#clientNo,#idType,#idNo,//*[@id="main"]/div[2]/div[2]/div/table/tbody/tr[2]/td[8]/a,//*[@id="main"]/div[2]/div[2]/div[1]/h2

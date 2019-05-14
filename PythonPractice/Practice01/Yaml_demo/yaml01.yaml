@@ -1,0 +1,26 @@
+---
+#  demo01
+key_json:
+    key1: abc
+    key2: 1111
+    key3:
+      - 1111
+      - aaaa
+    key4: true
+    key5: false
+    n4: ~           # None用~表示
+    n6: !!str 123   # int转str
+    n7: !!str true  # bool值转str
+    n1: 12.30       # int和float类型的数字
+
+# dict嵌套list
+dict_001:
+    - user: admin1
+      psw: '123456'
+
+    - user: admin2
+      psw: '111111'
+
+    - user: admin3
+      psw: '222222'
+...

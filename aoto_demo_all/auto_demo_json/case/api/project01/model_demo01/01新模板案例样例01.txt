@@ -1,0 +1,11 @@
+*** Settings ***
+Resource          ../../../../model/json_model_new.txt
+
+*** Test Cases ***
+01001登陆
+    [Template]    json_public_model
+    project01:login    name:=zhangm002;password:=cmrh1875    msg:=请求成功
+
+01002查看信用风险信息
+    [Template]    json_public_model
+    project01:login    name:=zhangm002;password:=cmrh1875    msg:=请求成功    project01.majorIssue:getGrid    \    msg:=请求成功

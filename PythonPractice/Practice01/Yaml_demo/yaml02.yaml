@@ -1,0 +1,45 @@
+--- # 文档开始
+#[blue, red, green]
+url: http://www.wolfcode.cn
+#即表示server.host属性的值；
+server:
+    host: http://www.wolfcode.cn
+#数组，即表示server为[a,b,c]
+server:
+    - 120.168.117.21
+    - 120.168.117.22
+    - 120.168.117.23
+#常量
+pi: 3.14   #定义一个数值3.14
+hasChild: true  #定义一个boolean值
+name: '你好YAML'   #定义一个字符串
+
+## list嵌套dict
+dict_01:
+    - user: admin1
+      psw: '123456'
+
+    - user: admin2
+      psw: '111111'
+
+    - user: admin3
+      psw: '222222'
+
+# dict嵌套list
+nub1:
+    - admin1
+    - '123456'
+
+nb2:
+    - admin2
+    - '111111'
+
+nb3:
+    - admin3
+    - '222222'
+
+
+
+
+
+...

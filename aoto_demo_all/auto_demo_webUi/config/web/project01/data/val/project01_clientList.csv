@@ -1,0 +1,3 @@
+evn,request_url,clientName,clientNo,idType,idNo,infoDetail
+di1,/RH_MSPSERVER/sales/clientManager/clientList.do,穆困哲海烧受,C00000657986,居民身份证,350924199001011723,客户详情
+st1,/RH_MSPSERVER/sales/clientManager/clientList.do,罗霞,C00000076030,居民身份证,430104197509282542,客户详情

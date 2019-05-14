@@ -1,0 +1,12 @@
+*** Settings ***
+Library           Collections
+Library           OperatingSystem
+Library           ../business/NewJsonParseImp.py
+
+*** Variables ***
+${version}        di1
+
+*** Keywords ***
+json_public_model
+    [Arguments]    @{data_resouce}
+    Json Model Pub    ${data_resouce}    ${version}

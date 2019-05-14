@@ -1,0 +1,2 @@
+btnGetpolicy,policyNo,btnClick
+//*[@id='main']/div[2]/div[1]/ul/li[4]/a,#policyNo,//*[@id='queryButton']/span/span

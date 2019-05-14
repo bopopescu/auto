@@ -1,0 +1,23 @@
+*** Settings ***
+Resource          ../../../../model/html_model.txt
+
+*** Test Cases ***
+01001登陆
+    [Template]    html_public_model
+    project01:getVerifyCode.do;Login.sso    \    ResultMsgContain:=JFIF    \    ResultMsgContain:=会话
+
+01002影像上传
+    [Tags]
+    [Template]    html_public_model
+    project01:login;uploadImage    username:=L000000001@cmrhagent.com;password:=cmrh1875    msg:=登陆成功    pimageType:=1337    flag:=Y;message:=成功
+
+01003影像提交
+    [Tags]
+    [Template]    html_public_model
+    project01:login;uploadImage;uploadImageFiles    username:=L000000001@cmrhagent.com;password:=cmrh1875    msg:=登陆成功    pimageType:=1335    flag:=Y;message:=成功    claimSettlementId:=YSTMS021809291624367240000001143;imageType:=1335    flag:=Y
+
+01004影像删除
+    [Tags]
+    [Template]    html_public_model
+    project01:login;uploadImage;uploadImageFiles;deleteFile    username:=L000000001@cmrhagent.com;password:=cmrh1875    msg:=登陆成功    pimageType:=1337    flag:=Y;message:=成功    claimSettlementId:=YSTMS021809291624367240000001143;imageType:=1335    flag:=Y
+    ...    imageType:=1335    flag:=Y

@@ -1,0 +1,11 @@
+*** Settings ***
+Resource          ../../../model/web_model.txt
+
+*** Test Cases ***
+01001保单查询
+    [Template]    web_public_model
+    project01__login:1    project01__getPolicyInfo:1
+
+01002承保客户查询
+    [Template]    web_public_model
+    project01__login:1    project01__clientList:1

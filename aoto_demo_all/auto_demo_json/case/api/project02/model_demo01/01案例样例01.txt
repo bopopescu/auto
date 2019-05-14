@@ -1,0 +1,19 @@
+*** Settings ***
+Resource          ../../../../model/json_model.txt
+
+*** Test Cases ***
+01001登陆
+    [Template]    json_public_model
+    project02:login    name:=admin;password:=admin123456    msg:=请求成功
+
+01002根据角色level获取地区fhArea
+    [Template]    json_public_model
+    project02:login;index/    name:=admin;password:=admin123456    msg:=请求成功    \    msg:=请求成功
+
+01003根据地区获取公司权限
+    [Template]    json_public_model
+    project02:login;index/;citycode/cmpPriv    name:=admin;password:=admin123456    msg:=请求成功    \    msg:=请求成功    \    msg:=请求成功
+
+01004获取金控公司
+    [Template]    json_public_model
+    project02:login;index/;fhCompanies    name:=admin;password:=admin123456    msg:=请求成功    \    msg:=请求成功    \    msg:=请求成功
