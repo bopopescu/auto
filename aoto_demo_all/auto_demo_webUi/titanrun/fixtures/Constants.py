@@ -2,7 +2,7 @@ class Environment:
     QA = "qa"
     STAGING = "staging"
     PRODUCTION = "production"
-    MASTER = "master"
+    MASTER = "main"
     LOCAL = "local"
     TEST = "test"
 

@@ -60,7 +60,7 @@ def my_t_01():
                             "tenant": {"updated_date": "2018-09-14 15:31:03", "is_deleted": 0, "name": "test",
                                        "enabled": True, "created_date": "2018-09-14 15:30:47",
                                        "desc": "Auto_云管自动化脚本数据，勿动", "id": "a7ee782a867c4447b5628a597b165436",
-                                       "cmdb_tenant_id": "ch"}, "name": "auto_test_slave"},
+                                       "cmdb_tenant_id": "ch"}, "name": "auto_test_subordinate"},
                "service_ip": "100.69.4.106", "service_id": "832adc597b1b4051812501edbc7ee6f1",
                "vpc_id": "7cd61f81167f4af4867adca0cfcee0bd", "id": "0ffb8963c3114ec18ab4794ffb485eda"}]
     json_t = eval(str(json_t).strip())
